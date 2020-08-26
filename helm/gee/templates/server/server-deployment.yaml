@@ -51,10 +51,6 @@ spec:
             periodSeconds: 3
           securityContext:
             privileged: true
-            allowPrivilegeEscalation: true
-            capabilities:
-              add:
-                - '*'
 
       volumes:
         - name: gee-server-storage

@@ -44,7 +44,7 @@ fusion:
     #  type: DirectoryOrCreate 
 
 server:
-  image: "gee-projects-server"
+  image: "geeserver"
   tag: "v1"
   #set constant number of replicas if auto-scaling isn't enables
   replicaCount: 1

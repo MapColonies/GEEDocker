@@ -47,6 +47,9 @@ spec:
               - service gefusion status
             initialDelaySeconds: 10
             periodSeconds: 3
+          securityContext:
+            privileged: true
+
       volumes:
         - name: gee-fusion-storage
           {{- toYaml .Values.fusion.storage | nindent 10 }}
