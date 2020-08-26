@@ -5,12 +5,12 @@ GEE repository: https://github.com/google/earthenterprise
 
 Build and run Google Earth Enterprise with docker
 
-To create all of the images run runChain.sh\
+### To create all of the images run runChain.sh\
 The script runChain.sh accepts the following flags:\
---test (for running the GEE tests to check that the build was successful)\
---tutorial (for creating an additional fusion image with the tutorial files)
+1. --test (for running the GEE tests to check that the build was successful)\
+2. --tutorial (for creating an additional fusion image with the tutorial files)
 
-If you wish to create each image independantly you may do so with the given scripts as following:
+### If you wish to create each image independantly you may do so with the given scripts as following:
 
 For the basic build run:
 ```sh
