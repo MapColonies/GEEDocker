@@ -4,6 +4,9 @@ FROM alpine
 
 COPY --from=base / /
 
+# Put GEE executables in path
+ENV PATH="/opt/google/bin:${PATH}"
+
 # Set the working directory
 WORKDIR /opt/google/share/tutorials/fusion
 
