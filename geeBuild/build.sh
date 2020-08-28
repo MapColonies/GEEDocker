@@ -26,4 +26,4 @@ if [ -n "$BUILD_TAG" ]; then
 	BUILD_TAG_STRING="--build-arg TAG=$BUILD_TAG"
 fi;
 echo $BUILD_TAG
-docker build --rm --no-cache $BUILD_TAG_STRING -t geebuild:v1 -f Dockerfile .
+docker build --rm $BUILD_TAG_STRING -t geebuild:v1 -f Dockerfile .
