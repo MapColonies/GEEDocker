@@ -27,3 +27,6 @@ if [ -n "$BUILD_TAG" ]; then
 fi;
 echo $BUILD_TAG
 docker build --rm $BUILD_TAG_STRING -t geebuild:v1 -f Dockerfile .
+
+# Remove all <None> images (dangling)
+docker rmi $(docker images --filter "dangling=true" -q)
