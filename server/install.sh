@@ -38,3 +38,6 @@ fi;
 
 # Build the image
 docker build --rm $ADMIN_PASSWORD_STRING -t geeserver:v1 -f Dockerfile .
+
+# Remove all <None> images (dangling)
+docker rmi $(docker images --filter "dangling=true" -q)
